@@ -185,17 +185,14 @@
   .flex {
     display: flex;
   }
-  .aspect-square {
-    aspect-ratio: 1 / 1;
-  }
   .min-h-screen {
     min-height: 100vh;
   }
-  .w-1\/3 {
-    width: calc(1 / 3 * 100%);
-  }
   .w-3\/4 {
     width: calc(3 / 4 * 100%);
+  }
+  .w-\[90\%\] {
+    width: 90%;
   }
   .w-screen {
     width: 100vw;
@@ -239,8 +236,8 @@
   .p-2 {
     padding: calc(var(--spacing) * 2);
   }
-  .p-3\.5 {
-    padding: calc(var(--spacing) * 3.5);
+  .p-6 {
+    padding: calc(var(--spacing) * 6);
   }
   .p-7 {
     padding: calc(var(--spacing) * 7);
@@ -283,6 +280,21 @@
   }
   .focus\:ring-blue-500:focus {
     --tw-ring-color: var(--color-blue-500);
+  }
+  @media (width >= 40rem) {
+    .sm\:w-3\/4 {
+      width: calc(3 / 4 * 100%);
+    }
+  }
+  @media (width >= 48rem) {
+    .md\:w-1\/2 {
+      width: calc(1 / 2 * 100%);
+    }
+  }
+  @media (width >= 64rem) {
+    .lg\:w-1\/3 {
+      width: calc(1 / 3 * 100%);
+    }
   }
 }
 @property --tw-space-y-reverse {
